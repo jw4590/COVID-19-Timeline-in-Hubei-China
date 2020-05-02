@@ -16,7 +16,7 @@
 - To present, click the present button. Drag the slide bar to see the changing data.
 
 **References**
--The data and information presented are mainly from: 
+- The data and information presented are mainly from: 
 National Health Commission of the People's Republic of China: http://www.nhc.gov.cn/xcs/xxgzbd/gzbd_index.shtml
 John Hopkins Coronavirus Resource Center: https://coronavirus.jhu.edu/data/hubei-timeline
 
