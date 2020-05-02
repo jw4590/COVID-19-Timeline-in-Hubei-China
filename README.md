@@ -1,6 +1,6 @@
 # COVID-19 Timeline in Hubei, China
 **What this is?**
-\nThis webpage presents the COVID-19 data in Hubei as an interactive timeline from Day 20 to Day 117 after China reported a cluster of cases of pneumonia in Wuhan, Hubei Province.
+- This webpage presents the COVID-19 data in Hubei as an interactive timeline from Day 20 to Day 117 after China reported a cluster of cases of pneumonia in Wuhan, Hubei Province.
 
 **What do the squares represent?**
 - Each square represent 100 people who were diagnosed with the corona virus in Hubei;
