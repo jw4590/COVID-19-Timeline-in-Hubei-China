@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+<div class="center" id="topad"></div>     
+<div class="center">
+  <h1>COVID-19 Timeline in Hubei, China</h1>
+  <br> 
+    <br>
+    <div class="center" id="slidecontainer">
+      <h1><span id="days" style="font-size: 100px;"></span></h1>
+      <div id="dayText">
+      <h2>Days after Dec 31 2019 when Wuhan Municipal Health Commission, China, reported a cluster of cases of pneumonia in Wuhan, Hubei Province.</好>
+      <h2 id="dayInfo"></h2>
+    </div>
+  <input type="range" min="20" max="117" value="20" class="slider" id="dayRange">
+  <h2><b>Drag the slider to select days.</b></h2>
+  </div>
+
+  
+<div class="center" id="buttonContainer">
+  <select class="buttonChild" id="colorChosen" onchange="colorOption()">
+    <option value="confirmed">Confirmed(red)</option>
+    <option value="healed">Recovered(green)</option>
+    <option value="death">Death(black)</option>
+  </select>
+    <button class="buttonChild" id="start" onclick="erase()">Start</button>
+    <button class="buttonChild" id="answer" onclick="answer()">Show Answer</button>
+    <button class="buttonChild" id="help" onclick="help()">What?</button>
+    <button class="buttonChild" id="present" onclick="present()">Present</button>
+
+  
+  <div class="center" id="slidecontainer1">
+    <input type="range" min="1" max="40" value="8" class="slider1" id="sizeRange">
+    <h2><b>Drag the slider to change sqaure size.</b></h2>
+    <div>
+
+    </div>
+  </div>
+</div>
+
+  <div class="center" id="dataContainer">
+    <div class="dataChild" id="selection">
+      <h2>Your Estimation</h2>
+      <p>Confirmed cases: <span class="data" id="confirmed"></span> squares selected representing <span class="data" id="confirmedData"></span> cases.</p>
+      <p>Healed cases: <span class="data" id="healed"></span> squares selected representing <span class="data" id="healedData"></span> cases.</p>
+      <p>Death cases: <span class="data" id="death"></span> squares selected representing <span class="data" id="deathData"></span> cases.</p>
+    </div>
+    <div class="dataChild" id="actualAnswer">
+      <h2>The Actual Data</h2>
+      <p>Confirmed cases: <span class="data" id="confirmed1"></span> squares selected representing <span class="data" id="confirmedData1"></span> cases.</p>
+      <p>Healed cases: <span class="data" id="healed1"></span> squares selected representing <span class="data" id="healedData1"></span> cases.</p>
+      <p>Death cases: <span class="data" id="death1"></span> squares selected representing <span class="data" id="deathData1"></span> cases.</p>
+    </div>
+  </div>
+
+  <div class="center" id="square-container"></div>
+
+</div>
+<div class="center" id="topad">
+  <div class="center" id="dayInfocontainer">
+    <h1>Moments</h1>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 8</div>
+        <img src="img/bbc.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 8</div>
+        <img src="img/huoshenshan.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 8</div>
+        <img src="img/huoshenshan2.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 8</div>
+        <img src="img/Hubei.jpg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 8</div>
+        <img src="img/liwenliang.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 8</div>
+        <img src="img/wuhan.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 8</div>
+        <img src="img/wuhan2.jpeg" style="width:100%">
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 8</div>
+        <img src="img/wuhan3.jpeg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+  </div>
+  <div class="center" id="reference">
+    <h1>References</h1>
+    <ul>
+      <li>“Hubei Timeline.” Johns Hopkins Coronavirus Resource Center, Johns Hopkins, coronavirus.jhu.edu/data/hubei-timeline.</li>
+   <li>“Coronavirus: The Hospital Built in a Matter of Days.” BBC News, BBC, 2 Feb. 2020, www.bbc.com/news/in-pictures-51280586.</li>
+   <li>61张图片记录武汉抗疫前线，张张感人！. Sohu, 31 Jan. 2020, www.sohu.com/a/369715095_168135.</li>
+    <li>严玉洁 . “市民自发前往武汉中心医院 献花悼念李文亮医生.” 市民自发前往武汉中心医院 献花悼念李文亮医生 - 中国日报网, China Daily, 7 Feb. 2020, cn.chinadaily.com.cn/a/202002/07/WS5e3d57a4a3107bb6b579dea1.html.</li>
+      <li>“Coronavirus: Wuhan to Ease Lockdown as World Battles Pandemic.” BBC News, BBC, 24 Mar. 2020, www.bbc.com/news/world-asia-china-52016139.</li>
+      <li>凤凰网-全国新冠肺炎疫情实时动态, IFeng News, news.ifeng.com/c/special/7tPlDSzDgVk.</li>
+  </ul>
+  <div id="footer"></div>
+  <p>© Copyright 2020 Jiewen Wu</p>
+  <br>
+</div> 
+</body>
+<script src="index.js"></script>
+</html>
